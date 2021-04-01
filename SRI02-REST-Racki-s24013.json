@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "1d965c4a-12cd-44af-b3f5-28a53d3c2350",
+		"name": "SRI02-REST-Racki-s24013",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "GetList",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8542/api/values",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8542",
+							"path": [
+								"api",
+								"values"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcUmFja2kgS2FtaWxcc291cmNlXHJlcG9zXFdlYkNybTJcV2ViQ3JtMlxhcGlcdmFsdWVz?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Mar 2021 22:01:09 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "603"
+						}
+					],
+					"cookie": [],
+					"body": "\"[{\\\"Id\\\":1,\\\"Name\\\":\\\"Kamil\\\",\\\"Surname\\\":\\\"Racki\\\",\\\"Birthdate\\\":\\\"2021-03-27T22:47:45.4048116+01:00\\\",\\\"Login\\\":\\\"admin\\\",\\\"Password\\\":\\\"admin\\\"},{\\\"Id\\\":2,\\\"Name\\\":\\\"Kamil1\\\",\\\"Surname\\\":\\\"Racki1\\\",\\\"Birthdate\\\":\\\"2021-03-27T22:47:45.4058117+01:00\\\",\\\"Login\\\":\\\"admin1\\\",\\\"Password\\\":\\\"admin1\\\"},{\\\"Id\\\":3,\\\"Name\\\":\\\"Kamil3\\\",\\\"Surname\\\":\\\"Racki3\\\",\\\"Birthdate\\\":\\\"2021-03-27T22:47:45.4058117+01:00\\\",\\\"Login\\\":\\\"admin3\\\",\\\"Password\\\":\\\"admin3\\\"},{\\\"Id\\\":4,\\\"Name\\\":\\\"Kamil1\\\",\\\"Surname\\\":\\\"Racki1\\\",\\\"Birthdate\\\":\\\"2021-03-27T17:01:40.8896131+01:00\\\",\\\"Login\\\":\\\"admin1\\\",\\\"Password\\\":\\\"admin1\\\"}]\""
+				}
+			]
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "GetUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8542/api/values/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8542",
+							"path": [
+								"api",
+								"values",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcUmFja2kgS2FtaWxcc291cmNlXHJlcG9zXFdlYkNybTJcV2ViQ3JtMlxhcGlcdmFsdWVzXDE=?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Mar 2021 22:02:23 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						}
+					],
+					"cookie": [],
+					"body": "\"{\\\"Id\\\":1,\\\"Name\\\":\\\"Kamil\\\",\\\"Surname\\\":\\\"Racki\\\",\\\"Birthdate\\\":\\\"2021-03-27T22:47:45.4048116+01:00\\\",\\\"Login\\\":\\\"admin\\\",\\\"Password\\\":\\\"admin\\\"}\""
+				}
+			]
+		},
+		{
+			"name": "AddUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"{\\\"Id\\\":1,\\\"Name\\\":\\\"Kamil\\\",\\\"Surname\\\":\\\"Racki\\\",\\\"Birthdate\\\":\\\"2021-03-27T22:47:45.4048116+01:00\\\",\\\"Login\\\":\\\"admin\\\",\\\"Password\\\":\\\"admin\\\"}\""
+				},
+				"url": {
+					"raw": "http://localhost:8542/api/values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8542",
+					"path": [
+						"api",
+						"values"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AddUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"{\\\"Id\\\":5,\\\"Name\\\":\\\"Kamil\\\",\\\"Surname\\\":\\\"Racki\\\",\\\"Birthdate\\\":\\\"2021-03-27T22:47:45.4048116+01:00\\\",\\\"Login\\\":\\\"admin\\\",\\\"Password\\\":\\\"admin\\\"}\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8542/api/values",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8542",
+							"path": [
+								"api",
+								"values"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcUmFja2kgS2FtaWxcc291cmNlXHJlcG9zXFdlYkNybTJcV2ViQ3JtMlxhcGlcdmFsdWVz?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Mar 2021 22:04:23 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "DeleteUser",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8542/api/values/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8542",
+							"path": [
+								"api",
+								"values",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcUmFja2kgS2FtaWxcc291cmNlXHJlcG9zXFdlYkNybTJcV2ViQ3JtMlxhcGlcdmFsdWVzXDI=?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Mar 2021 22:09:02 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8542/api/values/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8542",
+					"path": [
+						"api",
+						"values",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateUser",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"{\\\"Id\\\":1,\\\"Name\\\":\\\"Kamil\\\",\\\"Surname\\\":\\\"Kanapeczka\\\",\\\"Birthdate\\\":\\\"2021-03-27T22:47:45.4048116+01:00\\\",\\\"Login\\\":\\\"kanapka\\\",\\\"Password\\\":\\\"kanapka\\\"}\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8542/api/values/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8542",
+							"path": [
+								"api",
+								"values",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcUmFja2kgS2FtaWxcc291cmNlXHJlcG9zXFdlYkNybTJcV2ViQ3JtMlxhcGlcdmFsdWVzXDE=?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Mar 2021 22:43:56 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

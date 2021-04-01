@@ -1,0 +1,2 @@
+1. Odpalamy plik rozwiązania "WebCrm2.sln" w katalogu WebCrm2 w Visual Studio
+2. Odpalamy aplikacje (CTRL+F5)
